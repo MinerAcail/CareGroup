@@ -1,0 +1,35 @@
+type Registration {
+  id: String!
+  createdAt: Time!
+  lastComment: String!
+  absence: Boolean!
+  leaderID: String!
+  present: Boolean!
+  studentID: String!
+}
+type Student {
+  createdAt: Time!
+  day: String!
+  email: String
+  id: String!
+  leaderID: String!
+  name: String!
+  phoneNumber: String!
+  registrations: [Registration]
+  updatedAt: Time!
+}
+type Leader {
+  Aggregations: LeaderAggregations!
+  createdAt: Time!
+  day: String!
+  email: String
+  id: String!
+  location: String!
+  name: String!
+  types: String!
+  phoneNumber: String!
+  refreshToken: String!
+  students: [Student!]!
+  token: String!
+  updatedAt: Time!
+}
