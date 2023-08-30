@@ -1,4 +1,3 @@
-import { useState } from "react";
 import logo from "../../assets/vbcilog.png";
 import Navbar from "@/components/nav/navbar";
 import { Outlet } from "react-router-dom";
